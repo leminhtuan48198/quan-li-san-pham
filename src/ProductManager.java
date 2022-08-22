@@ -24,6 +24,7 @@ public class ProductManager {
          }
     }
     public List<Product> searchByName(String name){
+            productListByName.clear();
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).getName().equals(name) ) {
                 productListByName.add(productList.get(i));
